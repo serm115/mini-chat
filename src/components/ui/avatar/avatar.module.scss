@@ -1,0 +1,25 @@
+.avatar {
+    overflow: hidden;
+    .img {
+        width: 100%;
+    }
+
+    &.type-rounded {
+        border-radius: 50%;
+        .img {
+            border-radius: 50%;
+        }
+    }
+
+    &.size-small {
+        width: 40px;
+    }
+
+    &.size-normal {
+        width: 50px;
+    }
+
+    &.size-large {
+        width: 60px;
+    }
+}
