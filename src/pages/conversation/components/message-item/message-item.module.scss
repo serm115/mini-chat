@@ -1,0 +1,44 @@
+.item {
+    padding: 5px 20px 20px;
+    display: flex;
+    position: relative;
+    .message {
+        padding: 13px;
+        color: #fff;
+        line-height: 25px;
+        max-width: 90%;
+        display: inline-block;
+        text-align: right;
+        border-radius: 5px;
+        font-size: 15px;
+    }
+
+    .time {
+        position: absolute;
+        bottom: 2px;
+        font-size: 11px;
+        direction: ltr;
+    }
+
+    &.chat-left {
+        .message {
+            background-color: #6fbced;
+            text-align: left;
+        }
+
+        .time {
+            left: 23px;
+        }
+    }
+
+    &.chat-right {
+        flex-direction: row-reverse;
+        .message {
+            background-color: #58b666;
+        }
+
+        .time {
+            right: 23px;
+        }
+    }
+}
